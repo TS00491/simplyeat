@@ -1,0 +1,6 @@
+Need to change state to be dynamic in the Basket component.
+Create an overlay that prompts when clicking on Search bar or location button, with background buttons disabling feature. 
+Need to create a separate schema just for the restaurant menu items.
+insert more pictures and categories into the db and map onto the front page.
+Insert minimum width into most parts of the css at a later date so that it is properly responsive, similarly to Uber Eat's website.
+For the Sticky Div component, learn how to create collapsible components for each of the sorting divs within the component from here ----> https://blog.openreplay.com/creating-a-collapsible-component-for-react/

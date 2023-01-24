@@ -1,0 +1,114 @@
+.restaurantsAndFilterDiv{
+    display: flex;
+    flex-direction: row;
+    min-width: 500px;
+
+}
+
+.StickyDiv{ /*AKA the Sorting Div*/
+    display: flex;
+    flex-direction: column;
+    /* border: solid black; */
+    margin-top: 1rem;
+    width: 25%;
+    /* min-width: 0.075rem; */
+    height: 1000px;
+    gap: 1rem;
+    align-items: flex-start;
+    /* justify-content: center; */
+    position: sticky;
+    top: 0;
+    /* background-color: #666; */
+}
+
+.StickyDivAdjacent{
+    display: flex;
+    flex-direction: column;
+    /* border: solid black; */
+    margin-top: 1rem;
+    width: 75%;
+    height: 4000px;
+    gap: 1rem;
+    align-items: flex-start;
+    overflow: hidden;
+
+
+}
+
+.inARush{
+    display: flex;
+    padding-left: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    width: 100%;
+    /* border: solid blue; */
+    height: 24rem;
+
+}
+.inARushHeading{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.inARushSubheading{
+    font-size: 0.82rem;
+    color: rgb(80, 80, 80);
+}
+
+
+/* H1 "All Stores" */
+.allStoresHeaderRFDiv{
+margin-left: 1rem;
+
+}
+
+.restaurantCategoryZero{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;    
+    gap: 1rem;
+    /* border: solid pink; */
+}
+
+.restaurantMappingForInARushCategory img {
+    width: 100%;
+    height: 70%;
+}
+.restaurantMappingForInARushCategory{
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    height: 16rem;
+    cursor: pointer;
+    /* border: solid black; */
+    align-items: flex-start;
+
+/* justify-content: flex-start; */
+}
+
+.restaurantNameAndCuisine{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-self: center;
+}
+
+.restaurantCuisine{
+    
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    overflow: hidden;
+    /* border: solid green; */
+}
+
+.restaurantName{
+    width: 90%;
+    font-size: 16px;
+    overflow: hidden;
+        text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: bold;
+    text-align: left;
+}

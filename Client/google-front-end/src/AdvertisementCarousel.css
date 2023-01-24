@@ -1,0 +1,96 @@
+
+
+.advertisementCarouselOne{
+    display: flex;
+    flex-direction: row;
+    /* border: solid black; */
+    margin-top: 1rem;
+    width: 100%;
+    gap: 1rem;
+    justify-content: center;
+ }
+
+
+ .advertisementCarouselText{
+   display: flex;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   flex-direction: row;
+   height: 14rem;
+   width: 30%;
+    /* border: solid black; */
+    background-color: #addec9;
+    border-radius: 10px;
+ }
+ .advertisementCarouselText:hover{
+   cursor: pointer;
+ }
+/* For the second carousel div */
+ .advertisementCarouselTextItemTwo{
+   display: flex;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   flex-direction: row;
+   height: 14rem;
+   width: 30%;
+    /* border: solid black; */
+    background-color: #ffe3ac;
+    border-radius: 10px;
+ }
+ .advertisementCarouselTextItemTwo:hover{
+   cursor: pointer;
+ }
+
+
+ .advertisementCarouselTextTwo{
+
+   display: flex;
+   flex-direction: column;
+ }
+
+ .orderNowAdvertisementCarousel{
+   display: flex;
+   flex-direction: column;
+   border-radius: 80px;
+   border: none;
+   background-color: #ffffff;
+   align-self: center;
+   width: 6rem;
+ }
+
+ .bananaPicture{
+   height: 100%;
+   width: 100%;
+   border-radius: 10px;
+ }
+.spend25save5picture{
+   height: 100%;
+   width: 100%;
+   border-radius: 10px;
+}
+ .hundredsOfGroceries{
+   margin: 10px;
+   font-size: 0.935rem;
+ }
+ .descriptionTextAdvertisementCarousel{
+   font-size: 0.835rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+ }
+ /* 
+         .craveIt{}
+         .descriptionTextAdvertisementCarousel{}
+        
+
+         .advertisementCarouselDiv{}
+         .advertisementCarouselDivHeading{}
+         .advertisementCarouselDivDescription{}
+         .advertisementCarouselButton{} */
+
+
+
+.spend25save5{
+   margin: 10px;
+   font-size: 0.935rem;
+}
