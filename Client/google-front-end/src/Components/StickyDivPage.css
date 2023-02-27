@@ -1,114 +1,261 @@
-.restaurantsAndFilterDiv{
-    display: flex;
-    flex-direction: row;
-    min-width: 500px;
-
+.restaurantsAndFilterDiv {
+	display: flex;
+	flex-direction: row;
+	min-width: 500px;
 }
 
-.StickyDiv{ /*AKA the Sorting Div*/
-    display: flex;
-    flex-direction: column;
-    /* border: solid black; */
-    margin-top: 1rem;
-    width: 25%;
-    /* min-width: 0.075rem; */
-    height: 1000px;
-    gap: 1rem;
-    align-items: flex-start;
-    /* justify-content: center; */
-    position: sticky;
-    top: 0;
-    /* background-color: #666; */
+.StickyDiv {
+	/*AKA the Sorting Div*/
+	display: flex;
+	flex-direction: column;
+	/* border: solid black; */
+	margin-top: 1rem;
+	width: 25%;
+	/* min-width: 0.075rem; */
+	height: 1000px;
+	gap: 1rem;
+	align-items: flex-start;
+	/* justify-content: center; */
+	position: sticky;
+	top: 0;
+	/* background-color: #666; */
 }
 
-.StickyDivAdjacent{
-    display: flex;
-    flex-direction: column;
-    /* border: solid black; */
-    margin-top: 1rem;
-    width: 75%;
-    height: 4000px;
-    gap: 1rem;
-    align-items: flex-start;
-    overflow: hidden;
-
-
+.StickyDivAdjacent {
+	display: flex;
+	flex-direction: column;
+	/* border: solid black; */
+	margin-top: 1rem;
+	width: 75%;
+	height: 2000px;
+	gap: 1rem;
+	align-items: flex-start;
+	overflow: hidden;
 }
 
-.inARush{
-    display: flex;
-    padding-left: 12px;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    overflow-x: scroll;
-    width: 100%;
-    /* border: solid blue; */
-    height: 24rem;
-
+.inARush,
+.filterPopularRestaurant {
+	display: flex;
+	padding-left: 0px;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	overflow-x: scroll;
+	width: 100%;
+	/* border: solid blue; */
+	height: 24rem;
 }
-.inARushHeading{
-    font-size: 2rem;
-    font-weight: bold;
+.inARushHeading,
+.popularRestaurantHeading {
+	font-size: 2rem;
+	font-weight: bold;
 }
-.inARushSubheading{
-    font-size: 0.82rem;
-    color: rgb(80, 80, 80);
+.inARushSubheading,
+.popularRestaurantSubheading {
+	font-size: 0.82rem;
+	color: rgb(80, 80, 80);
 }
-
 
 /* H1 "All Stores" */
-.allStoresHeaderRFDiv{
-margin-left: 1rem;
-
+.allStoresHeaderRFDiv {
+	/* margin-left: 1rem; */
+	font-size: 1.5rem;
+	font-weight: bold;
 }
 
-.restaurantCategoryZero{
-    display: flex;
-    flex-direction: row;
-    overflow-x: scroll;    
-    gap: 1rem;
-    /* border: solid pink; */
+.restaurantCategoryZero,
+.valueBList {
+	display: flex;
+	flex-direction: row;
+	overflow-x: scroll;
+	gap: 1rem;
+	/* border: solid pink; */
 }
 
 .restaurantMappingForInARushCategory img {
-    width: 100%;
-    height: 70%;
+	width: 100%;
+	height: 70%;
 }
-.restaurantMappingForInARushCategory{
-    display: flex;
-    flex-direction: column;
-    width: 18rem;
-    height: 16rem;
-    cursor: pointer;
-    /* border: solid black; */
-    align-items: flex-start;
-
-/* justify-content: flex-start; */
+.valueBListMapping img {
+	width: 100%;
+	height: 70%;
 }
 
-.restaurantNameAndCuisine{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-self: center;
+.restaurantMappingForInARushCategory,
+.valueBListMapping {
+	display: flex;
+	flex-direction: column;
+	width: 18rem;
+	height: 16rem;
+	cursor: pointer;
+	/* border: solid black; */
+	align-items: flex-start;
+
+	/* justify-content: flex-start; */
 }
 
-.restaurantCuisine{
-    
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-    overflow: hidden;
-    /* border: solid green; */
+.restaurantNameAndCuisine {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-self: center;
 }
 
-.restaurantName{
-    width: 90%;
-    font-size: 16px;
-    overflow: hidden;
-        text-overflow: ellipsis;
-    white-space: nowrap;
-    font-weight: bold;
-    text-align: left;
+.restaurantCuisine {
+	display: flex;
+	flex-direction: row;
+	align-self: center;
+	overflow: hidden;
+	/* border: solid green; */
+}
+
+.restaurantName {
+	width: 90%;
+	font-size: 16px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-weight: bold;
+	text-align: left;
+}
+
+/* /////////////////////////////////////////////////////////////// */
+/* Sorting and Filtering */
+
+.sorting {
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+}
+.sort {
+	font-size: 1.25rem;
+	font-weight: 500;
+	padding-bottom: 0.8rem;
+}
+.sortToggle {
+	font-size: 1.25rem;
+	font-weight: 500;
+	padding-bottom: 0.8rem;
+}
+.sortingOnPopularity,
+.toggleSorting {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.radioSortingDiv {
+	display: flex;
+	flex-direction: column;
+}
+.radioSort {
+	display: flex;
+	flex-direction: row;
+	gap: 0.6rem;
+	font-weight: 500;
+	margin-top: 0.3rem;
+	margin-bottom: 0.3rem;
+}
+.toggleSortingDiv {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 1rem;
+}
+.ueToggleFilterRow,
+.topEatsToggle {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	flex-direction: row;
+
+	/* border: solid black; */
+}
+.labelToggle {
+	display: flex;
+	flex-direction: row;
+	height: 1rem;
+}
+.deals {
+	display: flex;
+	flex-direction: row;
+}
+/* input[type='radio'] {
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+    display: inline-block;
+    visibility: visible;
+    border: 200px solid rgb(0, 0, 0);
+}
+*/
+
+input[type="radio"] {
+	filter: grayscale(100%) contrast(200%);
+	width: 20px;
+	height: 20px;
+}
+
+/* the switch itself */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 48px;
+	height: 24px;
+	/* color: red; */
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	top: 0;
+	height: 24px;
+	width: 24px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+	overflow: visible;
+}
+
+input:checked + .slider {
+	background-color: #ccc;
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+	background-color: black;
+}
+
+/* Rounded sliders */
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
 }

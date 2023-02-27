@@ -34,6 +34,7 @@ function renderProducts(){
 
 <img className="foodCategoryPictureLinks" key ={foodDetails.id} src={foodDetails.foodPictureLink} />
 <p className="foodCategoryCuisine" key = {index}>{foodDetails.cuisine} </p>
+
         </div>
         
         )

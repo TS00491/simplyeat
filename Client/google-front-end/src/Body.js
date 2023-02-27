@@ -1,5 +1,4 @@
 import React from "react"
-import BodyText from "./BodyText"
 import FoodCategoryCarousel from "./Components/FoodCategoryCarousel"
 import AdvertisementCarousel from "./Components/AdvertisementCarousel"
 import StickyDiv from "./Components/StickyDiv"
